@@ -9,7 +9,7 @@ exports.connect = function (){
   db.once('open', function () {
     // we're connected!
     log("MongoDB connected on "+ config.mongoUrl);
-    log("###########################################################################");
+    log("##########################################s#################################");
   });
 };
 
