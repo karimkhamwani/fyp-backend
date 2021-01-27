@@ -5,7 +5,7 @@ var log = require('tracer').console({format : "{{message}}  - {{file}}:{{line}}"
 exports.connect = function (){
   mongoose.connect(config.mongoUrl);
   var db = mongoose.connection;
-  db.on('error', console.error.bind(console, 'connectsion errreor:'));
+  db.on('error', console.error.bind(console, 'connectssion errreor:'));
   db.once('open', function () {
     // we're connected!
     log("MongoDB connected on "+ config.mongoUrl);
